@@ -1,67 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #121212;
-        color: #e0e0e0;
-        margin: 0;
-        padding: 20px;
-    }
-    header {
-        background: #1f1f1f;
-        padding: 20px;
-        border-radius: 8px;
-        border-left: 5px solid #ff3366;
-    }
-    h1 {
-        color: #ffffff;
-        margin-top: 0;
-    }
-    nav a {
-        color: #ff3366;
-        text-decoration: none;
-        margin-right: 10px;
-        font-weight: bold;
-    }
-    nav a:hover {
-        text-decoration: underline;
-    }
-    main {
-        margin-top: 20px;
-        background: #1f1f1f;
-        padding: 20px;
-        border-radius: 8px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        background: #2a2a2a;
-        margin-bottom: 10px;
-        padding: 12px;
-        border-radius: 5px;
-    }
-    footer {
-        text-align: center;
-        margin-top: 30px;
-        color: #777;
-        font-size: 0.9em;
-    }
-</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModaUrbana - Tienda de Ropa</title>
+    <title>gnew.pe - Tienda de Ropa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ModaUrbana Store</h1>
-        <p>Las mejores tendencias en ropa juvenil y urbana</p>
-        <nav>
+    <header class="header-centrado">
+        <a href="carrito.html" class="carrito-esquina">🛒 Ver Carrito</a>
+
+        <div class="logo-container">
+            <img src="imagenes/logo.jpeg" alt="Logo gnew.pe">
+        </div>
+
+        <h1>gnew.pe</h1>
+        <p class="slogan">Ropa clásica, urbana y a tu estilo</p>
+        
+        <nav class="nav-centrado">
             <a href="index.html">Inicio</a> | 
-            <a href="carrito.html">Ver Carrito</a> | 
             <a href="login.html">Iniciar Sesión</a> |
             <a href="dashboard.html">Panel Admin</a>
         </nav>
@@ -70,16 +27,32 @@
     <main>
         <section>
             <h2>Catálogo de Ropa</h2>
-            <ul>
-                <li>Polo Oversize Calavera - S/. 55.00</li>
-                <li>Pantalón Cargo Jogger - S/. 95.00</li>
-                <li>Casaca Denim Oversize - S/. 130.00</li>
-            </ul>
+            <div class="catalogo-grid">
+                
+                <div class="producto-card">
+                    <img src="imagenes/polo vidi.jpeg" alt="Polo Oversize">
+                    <h3>Polo Oversize Calavera</h3>
+                    <p>S/. 55.00</p>
+                </div>
+
+                <div class="producto-card">
+                    <img src="imagenes/polo vidi.jpeg" alt="Pantalón Cargo">
+                    <h3>Pantalón Cargo Jogger</h3>
+                    <p>S/. 95.00</p>
+                </div>
+
+                <div class="producto-card">
+                    <img src="imagenes/polo vidi.jpeg" alt="Casaca Denim">
+                    <h3>Casaca Denim Oversize</h3>
+                    <p>S/. 130.00</p>
+                </div>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 ModaUrbana - UTP.</p>
+        <p>&copy; 2026 gnew.pe.</p>
     </footer>
 </body>
 </html>

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoTienda - Carrito</title>
+    <title>gnew.pe - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Carrito de Compras</h1>
+    <header class="header-centrado">
+        <h1>Tu Carrito - gnew.pe</h1>
+        <p class="slogan">Revisa tus prendas seleccionadas</p>
         <nav>
             <a href="index.html">Volver al Inicio</a> | 
             <a href="login.html">Iniciar Sesión</a>
@@ -15,21 +17,25 @@
     </header>
 
     <main>
-        <h2>Tus Productos Seleccionados</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Producto</th>
+        <h2>Productos en tu bolsa</h2>
+        <table border="1" cellpadding="10" style="width:100%; border-color: #444; color: #fff; background: #2a2a2a;">
+            <tr style="background: #1f1f1f;">
+                <th>Prenda</th>
                 <th>Precio</th>
                 <th>Cantidad</th>
             </tr>
             <tr>
-                <td>Laptop Gamer Pro</td>
-                <td>S/. 3,500.00</td>
+                <td>Polo Oversize Calavera</td>
+                <td>S/. 55.00</td>
                 <td>1</td>
             </tr>
         </table>
-        <p><strong>Total a pagar: S/. 3,500.00</strong></p>
-        <button>Proceder al pago</button>
+        <p style="margin-top: 20px; font-size: 1.2rem;"><strong>Total a pagar: S/. 55.00</strong></p>
+        <button style="background: #ff3366; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer;">Proceder al pago</button>
     </main>
+
+    <footer>
+        <p>&copy; 2026 gnew.pe.</p>
+    </footer>
 </body>
 </html>
