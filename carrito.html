@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras - UTP</title>
+    <title>ProyectoTienda - Carrito</title>
 </head>
 <body>
     <header>
-        <h1>Tu Carrito de Compras</h1>
-        <p>Aquí se listarán los productos seleccionados.</p>
-        <a href="index.html">Volver a la tienda principal</a>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <a href="index.html">Volver al Inicio</a> | 
+            <a href="login.html">Iniciar Sesión</a>
+        </nav>
     </header>
+
+    <main>
+        <h2>Tus Productos Seleccionados</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Laptop Gamer Pro</td>
+                <td>S/. 3,500.00</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p><strong>Total a pagar: S/. 3,500.00</strong></p>
+        <button>Proceder al pago</button>
+    </main>
 </body>
 </html>
