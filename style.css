@@ -14,7 +14,6 @@ header {
     position: relative;
 }
 
-/* Estilo para centrar todo en el header como pediste */
 .header-centrado {
     text-align: center;
 }
@@ -34,7 +33,6 @@ header {
     margin-bottom: 15px;
 }
 
-/* Carrito flotando en la esquina superior derecha */
 .carrito-esquina {
     position: absolute;
     top: 20px;
