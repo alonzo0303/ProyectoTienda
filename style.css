@@ -111,3 +111,28 @@ footer {
     color: #777;
     font-size: 0.9em;
 }
+.main-nosotros {
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.seccion-nosotros {
+    padding: 40px 20px;
+    background: #1a1a1a;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.seccion-nosotros h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.seccion-nosotros p {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
