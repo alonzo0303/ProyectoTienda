@@ -8,6 +8,6 @@ public class ClienteController {
 
     @GetMapping("/alsha-inicio")
     public String index() {
-        return "cliente/index";
+        return "index";
     }
 }
