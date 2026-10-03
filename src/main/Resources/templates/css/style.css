@@ -10,9 +10,9 @@ body {
     color: #333333;
 }
 
-/* Barra de Navegación */
+
 .navbar {
-    background-color: #9b72cf; /* Tono morado UI */
+    background-color: #9b72cf; 
     display: flex;
     justify-content: space-between;
     align-items: center;
