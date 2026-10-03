@@ -95,3 +95,130 @@ body {
 .btn-impulsa:hover {
     background-color: #845ec2;
 }
+/* --- ESTILOS GENERALES DE SECCIONES --- */
+section {
+    padding: 80px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+section > .container > p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- GRID DE SERVICIOS --- */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-servicio {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-servicio h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.card-servicio p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- SECCIÓN NOSOTROS / VALORES --- */
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.item-valor {
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #6c5ce7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.item-valor h4 {
+    font-size: 1.1rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.item-valor p {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+/* --- ESTADÍSTICAS CLIENTES --- */
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.stat-box h3 {
+    font-size: 3rem;
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+.stat-box p {
+    color: #b2bec3;
+    font-size: 1rem;
+}
+
+/* --- SECCIÓN CONTACTO --- */
+.seccion-contacto {
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.seccion-contacto .btn-impulsar {
+    display: inline-block;
+    background-color: #00b894;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 184, 148, 0.3);
+    transition: background 0.3s ease;
+}
+
+.seccion-contacto .btn-impulsar:hover {
+    background-color: #019875;
+}
