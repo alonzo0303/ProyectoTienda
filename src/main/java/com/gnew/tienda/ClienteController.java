@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ClienteController {
     @GetMapping("/alsha-inicio")
 public String index() {
-    return "index";
+    return "cliente/index";
 }
 }
 
