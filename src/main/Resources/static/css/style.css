@@ -1,16 +1,24 @@
+/* --- ESTILOS GENERALES --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /* Hace que el desplazamiento por los links sea suave */
 }
 
 body {
     background-color: #ffffff;
     color: #333333;
+    padding-top: 90px; /* Evita que el contenido quede oculto detrás de la barra fija */
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
+/* --- BARRA DE NAVEGACIÓN FIJA --- */
 .navbar {
     background-color: #9b72cf; 
     display: flex;
@@ -19,6 +27,12 @@ body {
     padding: 10px 40px;
     height: 90px;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .nav-brand {
@@ -66,36 +80,7 @@ body {
     opacity: 0.8;
 }
 
-/* Sección Hero */
-.hero {
-    padding: 80px 40px;
-    text-align: center;
-    background-color: #f9f9fb;
-}
-
-.hero-content h1 {
-    font-size: 2.2rem;
-    color: #2b2b2b;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    line-height: 1.4;
-}
-
-.btn-impulsa {
-    display: inline-block;
-    background-color: #9b72cf;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-
-.btn-impulsa:hover {
-    background-color: #845ec2;
-}
-/* --- ESTILOS GENERALES DE SECCIONES --- */
+/* --- SECCIONES GENERALES --- */
 section {
     padding: 80px 20px;
     border-bottom: 1px solid #eaeaea;
@@ -115,9 +100,78 @@ section > .container > p {
     margin-bottom: 50px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+/* --- BANNER PRINCIPAL (INICIO) --- */
+.banner-principal {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.bienvenida-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.logo-bienvenida-box {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-grande-ag {
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+}
+
+.texto-bienvenida-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto-bienvenida-box h1 {
+    font-size: 2.3rem;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+/* --- SECCIÓN NOSOTROS --- */
+.seccion-nosotros {
+    text-align: center;
+    background-color: #fcfcfc;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.item-valor {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #6c5ce7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item-valor h4 {
+    font-size: 1.1rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.item-valor p {
+    color: #636e72;
+    font-size: 0.9rem;
 }
 
 /* --- GRID DE SERVICIOS --- */
@@ -125,6 +179,7 @@ section > .container > p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    text-align: left;
 }
 
 .card-servicio {
@@ -153,38 +208,11 @@ section > .container > p {
     line-height: 1.5;
 }
 
-/* --- SECCIÓN NOSOTROS / VALORES --- */
-.valores-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.item-valor {
-    background: #fdfdfd;
-    padding: 25px;
-    border-radius: 10px;
-    border-left: 4px solid #6c5ce7;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-}
-
-.item-valor h4 {
-    font-size: 1.1rem;
-    color: #2d3436;
-    margin-bottom: 10px;
-}
-
-.item-valor p {
-    color: #636e72;
-    font-size: 0.9rem;
-}
-
 /* --- ESTADÍSTICAS CLIENTES --- */
 .stats-grid {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
     text-align: center;
     margin-top: 30px;
 }
@@ -200,25 +228,25 @@ section > .container > p {
     font-size: 1rem;
 }
 
-/* --- SECCIÓN CONTACTO --- */
+/* --- SECCIÓN CONTACTO Y BOTONES --- */
 .seccion-contacto {
     text-align: center;
     background: #f8f9fa;
 }
 
-.seccion-contacto .btn-impulsar {
+.btn-impulsar {
     display: inline-block;
     background-color: #00b894;
     color: white;
-    padding: 15px 30px;
+    padding: 14px 28px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
     box-shadow: 0 4px 12px rgba(0, 184, 148, 0.3);
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.seccion-contacto .btn-impulsar:hover {
+.btn-impulsar:hover {
     background-color: #019875;
+    transform: translateY(-2px);
 }
